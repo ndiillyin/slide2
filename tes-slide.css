@@ -1,0 +1,25 @@
+html, body{
+  height: 100%;
+  margin: 0%;
+  background-color: #ffffff;
+  background: linear-gradient(#85D2FF, #ffffff);
+}
+.galeri{
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  scroll-snap-type: x-mandatory;
+  -ms-overflow-style: none;
+  scrollbarr-width: none;
+}
+.galeri::-webkit-scrollbarr{display:none;
+}
+.galeri img{
+  flex:0 0 auto;
+  width: clamp(200px, 80vw, 300px);
+  height: auto;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
